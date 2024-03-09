@@ -1,7 +1,9 @@
+import { Button } from "@chakra-ui/react"
 const App = () => {
+  
   return (
     <div>
-      test
+      <Button colorScheme="blue">Click</Button>
     </div>
   )
 }
