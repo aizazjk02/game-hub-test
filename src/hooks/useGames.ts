@@ -3,6 +3,7 @@ import { GameQuery } from "../App"; // Import GameQuery type from ../App
 import { FetchResponse } from "../services/api-client"; // Import FetchResponse type from ../services/api-client
 import APIClient from "../services/api-client"; // Import APIClient class from ../services/api-client
 import { Platform } from "./usePlatforms"; // Import Platform type from ./usePlatforms
+import ms from "ms";
 
 const apiClient = new APIClient<Game>("/games"); // Create an instance of APIClient for fetching games
 
@@ -43,6 +44,7 @@ const useGames = (gameQuery: GameQuery) => {
       // Otherwise, return undefined to signal that there are no more pages to fetch.
       return lastPage.next ? allPages.length + 1 : undefined;
     },
+    staleTime: ms('24h'),
   });
 };
 
