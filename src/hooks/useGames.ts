@@ -14,6 +14,8 @@ export interface Game {
  parent_platforms: { platform: Platform }[];
  rating: number;
  rating_top: number;
+ slug:string;
+ description_raw:string;
 }
 
 // Custom hook for fetching games
