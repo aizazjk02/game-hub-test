@@ -6,7 +6,6 @@ interface Props {
 }
 const GameTrailer = ({ gameId }: Props) => {
     const { data, isLoading, error } = useTrailers(gameId)
-    console.log(gameId)
     if (isLoading) return <Spinner />
     if (error) throw error
     const stream = data?.results[0]
