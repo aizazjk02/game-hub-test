@@ -6,14 +6,19 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <HStack justifyContent={"space-between"} paddingY={2}>
-            <Link to={"/"}>
-            <Image src={logo} boxSize={"60px"} objectFit={"cover"}/>
-            </Link>
-            <SearchInput/>
-            <ColorModeSwitch/>
-        </HStack>
-    )
+      <HStack
+        maxWidth={"1140px"}
+        marginX={"auto"}
+        justifyContent={"space-between"}
+        paddingY={2}
+      >
+        <Link to={"/"}>
+          <Image src={logo} boxSize={"60px"} objectFit={"cover"} />
+        </Link>
+        <SearchInput />
+        <ColorModeSwitch />
+      </HStack>
+    );
 }
 
 export default Navbar
