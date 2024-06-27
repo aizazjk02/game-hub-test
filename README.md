@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Game Hub (Video Game Explorer App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a front-end application built with **React JS**, **React Query**, **Chakra UI**, **TypeScript**, and **Vite**, allowing users to explore and discover video games using the rawg.io API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-time Data Fetching:** Utilizes React Query for efficient and real-time data fetching from the rawg.io API.
+- **Responsive Design:** Built with Chakra UI components for a responsive and intuitive user interface that adapts to various screen sizes.
+- **Type Safety:** Implemented TypeScript throughout the project for enhanced type checking and improved development workflows.
+- **Fast Development:** Leveraged Vite for fast build times and a modern development experience.
+  
+## Getting Started
 
-## Expanding the ESLint configuration
+To get a local copy up and running, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the repository:**
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/aizazjk02/game-hub-test
+   cd game-hub-test
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Install dependencies:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   npm install
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+
+4. **Build for production:**
+
+   ```bash
+   npm run build
+
+
