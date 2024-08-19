@@ -11,7 +11,9 @@ interface Props {
 const GameCard = ({ game }: Props) => {
     return (
         <Card minHeight={"320px"}>
+            <Link to={`/games/${game.slug}`}>
             <Image src={getCroppedImageUrl(game.background_image)} objectFit={"cover"} />
+            </Link>
             <CardBody>
                 <HStack justifyContent={"space-between"} marginBottom={3}>
                     <PlatformIconsList platforms={game.parent_platforms.map(p => p.platform)} />
